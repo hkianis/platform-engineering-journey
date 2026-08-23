@@ -162,6 +162,40 @@ https://github.com/hkianis/platform-engineering-journey.git
 
 Both fetch and push use the expected repository.
 
+## Reproduction / Setup Procedure
+
+From a fresh Ubuntu WSL2 environment, the project workspace can be prepared and validated with the following procedure:
+
+```bash
+mkdir -p ~/projects
+cd ~/projects
+
+git clone https://github.com/hkianis/platform-engineering-journey.git
+cd platform-engineering-journey
+
+sudo -v
+sudo apt update
+sudo apt install --dry-run curl
+
+uname -a
+cat /etc/os-release
+whoami
+id
+echo $SHELL
+pwd
+df -h
+free -h
+ps -p 1 -o comm=
+
+git --version
+git status
+git remote -v
+```
+
+`apt install --dry-run curl`was used to validate package installation and dependency resolution without modifying the system.
+
+In the current environment, `curl` was already installed, so APT planned an upgrade rather than a new installation.
+
 ## WSL2 Considerations
 
 WSL2 provides a suitable environment for the current Linux foundation work, but it is not identical to a standalone Linux host.
