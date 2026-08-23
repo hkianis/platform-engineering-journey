@@ -188,11 +188,12 @@ free -h
 ps -p 1 -o comm=
 
 git --version
+git fetch origin
 git status
 git remote -v
 ```
 
-`apt install --dry-run curl`was used to validate package installation and dependency resolution without modifying the system.
+`apt install --dry-run curl` was used to validate package installation and dependency resolution without modifying the system.
 
 In the current environment, `curl` was already installed, so APT planned an upgrade rather than a new installation.
 
