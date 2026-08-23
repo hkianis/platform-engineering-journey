@@ -18,7 +18,7 @@ This repository is the working portfolio for building practical capability acros
 2. **Issues define measurable deliverables.** Issues should normally represent 2–6 hours of engineering work.
 3. **Changes go through branches and Pull Requests.** Direct changes to `main` are reserved for trivial administration only.
 4. **Acceptance criteria determine completion.** "I watched/read it" is not a valid Definition of Done.
-5. **No employer-confidential material.** This public repository must not contain Volvo Cars internal code, URLs, package names, architecture, credentials, data, or proprietary information.
+5. **No employer-confidential material.** This public repository must not contain employer-internal code, URLs, package names, architecture, credentials, data, or proprietary information.
 
 ## Planned Learning Path
 
@@ -99,7 +99,7 @@ Course completion alone does not satisfy the Definition of Done.
 
 ## Roadmap
 
-The detailed career and engineering roadmap is maintained in [`docs/roadmap.md`](docs/roadmap.md).
+The detailed public engineering roadmap is maintained in [`docs/roadmap.md`](docs/roadmap.md).
 
 ## Current Foundation Milestones
 
@@ -119,7 +119,7 @@ The detailed career and engineering roadmap is maintained in [`docs/roadmap.md`]
 Never commit:
 
 - credentials, tokens, keys, certificates, or `.env` secrets;
-- Terraform state files;
+- Terraform state files or sensitive variable files;
 - private endpoints or internal hostnames;
 - proprietary source code;
 - employer-specific artifacts or confidential documentation;
