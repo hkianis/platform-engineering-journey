@@ -2,11 +2,12 @@
 
 **Status:** Active  
 **Current Phase:** Foundation  
+**Current Milestone:** M1 — Linux Foundations  
 **Last Updated:** 2026-08-23
 
 ## Purpose
 
-This public roadmap tracks evidence-driven progression toward Platform Engineering responsibilities. It intentionally excludes employer-confidential implementation details.
+This public roadmap tracks evidence-driven progression toward Platform Engineering responsibilities. It intentionally excludes employer-confidential implementation details and private skill scoring.
 
 Progress is not measured by courses completed. A capability is considered demonstrated only when supported by implementation, troubleshooting, design work, documentation, automated validation, or realistic project evidence.
 
@@ -23,33 +24,37 @@ The target state is the ability to take a platform problem and:
 7. explain engineering trade-offs;
 8. own the solution through an operational lifecycle.
 
-## Current Skill Baseline
+## Current Engineering Focus
 
-| Skill | Current Level | Senior Target | Priority |
-|---|---:|---:|---|
-| Linux | 1 | 4 | Critical |
-| Networking | 0 | 3–4 | Critical |
-| Docker | 0 | 4 | Critical |
-| Kubernetes | 0 | 4–5 | Critical |
-| Azure / Cloud | 0 | 4 | Critical |
-| Terraform | 0 | 4 | Critical |
-| CI/CD | 3 | 4–5 | Existing strength |
-| GitOps | 0 | 4 | High |
-| Prometheus / Grafana | 0 | 3–4 | High |
-| Security | 0 | 3 | High |
-| Python | ~3 | 3–4 | Existing strength |
-| Go | 0 | 3–4 | Later phase |
+The foundation phase is deliberately sequenced around the capabilities needed to build and operate a cloud-native delivery platform:
 
-### Skill Scale
+- Linux and systems fundamentals;
+- networking fundamentals;
+- container engineering;
+- Kubernetes deployment and troubleshooting;
+- Azure infrastructure;
+- Terraform and Infrastructure as Code;
+- CI/CD architecture and automation;
+- later: GitOps, observability, security, and platform architecture.
 
-| Level | Definition |
-|---|---|
-| 0 | No practical knowledge |
-| 1 | Basic conceptual knowledge |
-| 2 | Completed guided labs/tutorials |
-| 3 | Used independently in work or realistic projects |
-| 4 | Can design, operate, and troubleshoot independently |
-| 5 | Can architect solutions and mentor others |
+Public progress is demonstrated through repository evidence rather than self-reported skill levels.
+
+## Evidence Model
+
+Useful evidence includes:
+
+- working code or configuration;
+- reproducible labs;
+- automated tests;
+- commands and relevant output;
+- intentionally reproduced failure scenarios;
+- troubleshooting write-ups;
+- architecture notes;
+- ADRs;
+- infrastructure provisioned from code;
+- Pull Requests with validation against acceptance criteria.
+
+Course completion by itself is not evidence of engineering capability.
 
 ## Weekly Capacity
 
@@ -254,7 +259,9 @@ Acceptance criteria:
 - explain Terraform state;
 - use variables and outputs;
 - create at least one reusable module;
-- destroy lab infrastructure safely.
+- destroy lab infrastructure safely;
+- keep provider dependency selection reproducible with the Terraform lock file;
+- keep secrets, state, and sensitive variable files out of version control.
 
 ### M8 — CI/CD Integration
 
@@ -289,7 +296,7 @@ Acceptance criteria:
 
 ## Portfolio Project — Platform Delivery Lab
 
-The roadmap should evolve one project rather than produce unrelated tutorial repositories.
+The roadmap evolves one project rather than producing unrelated tutorial repositories.
 
 ### Stage 1
 
@@ -371,7 +378,7 @@ Production Exposure
 Certification
 ```
 
-Potential later certifications include Azure infrastructure-focused certification and CKA.
+Potential later certifications include an Azure infrastructure-focused certification and CKA.
 
 ## Roadmap Status
 
@@ -382,7 +389,7 @@ Potential later certifications include Azure infrastructure-focused certificatio
 | GitHub operating model defined | ✅ Complete |
 | 12-week roadmap | ✅ Defined |
 | Repository created | ✅ Complete |
-| Initial repository setup | 🟡 In progress |
+| Initial repository setup | ✅ Complete |
 | GitHub Project created | ⬜ Not started |
 | M1 Linux Foundations | ⬜ Not started |
 | M2 Networking Foundations | ⬜ Not started |
@@ -398,27 +405,25 @@ Potential later certifications include Azure infrastructure-focused certificatio
 At the end of each milestone:
 
 1. review acceptance criteria;
-2. update the skill level;
-3. document evidence;
-4. document blockers;
-5. revise upcoming milestones if required;
-6. update pacing based on actual velocity.
+2. update demonstrated evidence;
+3. document blockers;
+4. revise upcoming milestones if required;
+5. update pacing based on actual velocity.
 
 Every four weeks:
 
 - reassess workload;
-- review skill progression;
+- review demonstrated capability;
 - confirm the project is producing real engineering evidence;
 - remove low-value passive learning;
 - add production-relevant work when possible.
 
 ## Current Next Actions
 
-1. Complete and merge the initial repository setup Pull Request.
-2. Create the GitHub Project / Kanban board.
-3. Create milestones M1–M8.
-4. Create M1 Linux Foundations issues.
-5. Start Week 1 and record evidence directly in this repository.
+1. Create the GitHub Project / Kanban board.
+2. Create milestones M1–M8.
+3. Create M1 Linux Foundations issues.
+4. Start Week 1 and record evidence directly in this repository.
 
 ## Change Log
 
@@ -428,4 +433,5 @@ Every four weeks:
 | 2026-08-23 | Weekly capacity set to 11 hours |
 | 2026-08-23 | GitHub selected as roadmap and portfolio system |
 | 2026-08-23 | Public repository created |
-| 2026-08-23 | Initial repository setup started |
+| 2026-08-23 | Initial repository setup completed |
+| 2026-08-23 | Public roadmap revised to emphasize demonstrated evidence rather than private skill scoring |
