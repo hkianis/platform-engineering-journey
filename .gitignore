@@ -27,7 +27,14 @@ env/
 crash.log
 crash.*.log
 *.tfplan
-.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+.terraformrc
+terraform.rc
+
+# Keep .terraform.lock.hcl version-controlled for reproducible provider selection.
 
 # IDE / editor
 .vscode/
