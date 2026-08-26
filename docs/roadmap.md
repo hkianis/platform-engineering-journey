@@ -3,7 +3,7 @@
 **Status:** Active  
 **Current Phase:** Foundation  
 **Current Milestone:** M1 — Linux Foundations  
-**Last Updated:** 2026-08-23
+**Last Updated:** 2026-08-26
 
 ## Purpose
 
@@ -390,8 +390,10 @@ Potential later certifications include an Azure infrastructure-focused certifica
 | 12-week roadmap | ✅ Defined |
 | Repository created | ✅ Complete |
 | Initial repository setup | ✅ Complete |
-| GitHub Project created | ⬜ Not started |
-| M1 Linux Foundations | ⬜ Not started |
+| GitHub Project created | ✅ Complete |
+| M1–M8 milestones created | ✅ Complete |
+| M1 issues defined | ✅ Complete |
+| M1 Linux Foundations | 🚧 In progress (1 of 6 issues complete) |
 | M2 Networking Foundations | ⬜ Not started |
 | M3 Docker Foundations | ⬜ Not started |
 | M4 Kubernetes Fundamentals | ⬜ Not started |
@@ -420,10 +422,10 @@ Every four weeks:
 
 ## Current Next Actions
 
-1. Create the GitHub Project / Kanban board.
-2. Create milestones M1–M8.
-3. Create M1 Linux Foundations issues.
-4. Start Week 1 and record evidence directly in this repository.
+1. Complete M1 filesystem and permissions practice (#4).
+2. Complete M1 process and resource management practice (#5).
+3. Continue the remaining M1 service/log, cheat-sheet, and assessment work (#6–#8).
+4. Record reproducible evidence in focused Pull Requests and validate each issue against its acceptance criteria.
 
 ## Change Log
 
@@ -435,3 +437,5 @@ Every four weeks:
 | 2026-08-23 | Public repository created |
 | 2026-08-23 | Initial repository setup completed |
 | 2026-08-23 | Public roadmap revised to emphasize demonstrated evidence rather than private skill scoring |
+| 2026-08-26 | GitHub Project, M1–M8 milestones, and M1 issue definitions recorded as complete |
+| 2026-08-26 | M1 moved to in progress after completing the Linux development environment setup (#3 / PR #10) |
